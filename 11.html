@@ -16,7 +16,6 @@
     font-family: 'Reenie Beanie', cursive;
     color: black;
     display: inline-block;
-    margin-left: 500px;
   }
   .top2 {
     font-size: 15px;
@@ -29,6 +28,7 @@
   body {
     background-color: white;
     font-family: 'Gotu', sans-serif;
+    text-align: center;
   }
   h1 {
     font-size: 160px;
@@ -129,6 +129,12 @@
     display:relative;
     padding: 5px;
     width: 150px;
+    position:fixed;
+    top:150px;
+    left:20px;
+    overflow: auto;
+    z-index: 5;
+    margin-bottom: 30px;
   }
   .vertical-menu a{
     padding:25px;
@@ -175,7 +181,45 @@
   .vertical-menu li:hover .vertical-dropdown {
     display: block
 }
-
+  .subtitle {
+    color: black;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 37px;
+    display: inline-block;
+    border: 7px dashed #DF9D03;
+    background-color: none;
+    padding-left:300px;
+    padding-right:300px;
+    z-index: 3;
+}
+  .content {
+    position: relative;
+    background-color: none;
+    border: 3px solid #DF9D03;
+    z-index: 2;
+    display: inline-block;
+    max-width: 800px;
+    font-weight:400px;
+  }
+  .text {
+    margin: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 400px;
+    font-size: 15px;
+  }
+  .text-2{
+    margin:20px;
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 700px;
+    font-size: 15px;
+  }
+  .special-text {
+    font-weight: bold;
+    font-size: 25px;
+    color: green;
+  }
     </style>
 </head>
 <body>
@@ -191,7 +235,7 @@
     <li><a href="2.html">News</a>
       <ul class="dropdown_content">
         <li><a href="21.html">Article</a><li>
-        <li><a href="22.html">Book</a><li>
+        <li><a href="22.html">Book</a>
         </ul></li>
     <li><a href="3.html">Activity</a>
       <ul class="dropdown_content">
@@ -202,10 +246,35 @@
     <li><a href="4.html">Contact</a></li>
   </ul>
 
+<h1 class="subtitle"> ABOUT</h1>
+<div class="content"><img src="profile.jpg" width="250px" hspace=30px vspace=20px align=left>
+<span class="text">
+<span class="special-text">Hello! I'm Hyerin Park.</span> <br>
+I'm currently studying Business administration
+in Sogang university, Seoul, South Korea.<br>
+<br>
+I was born in Busan where a number of buildings
+and beautiful beach are naturally combined. This is why I've always loved eating seafood
+and just laying down sleeping on the beach.<br>
+<br>
+<span class="special-text">My childhood</span> has influenced on how I am now in many ways. Before I moved to the center of Busan, I was living in a small town until 10years old where it was surrounded by mountain and old buildings. At that time, I rarely spend my days in house and went outside to hang out with friends.<br>
+</span><span class="text-2">
+All I could have done in my town was running all around the village, looking for salamander, sledding in the back of apartment, and sometimes escaping from a friend who was running over with a dead rat, which still scares me out! Haha.
+<br><br>
+I guess this is where some part of my personality comes from. I consider myself as a <br><span class="special-text">very enthusiastic and energetic person</span>. Thanks to my childhood when I almost never hesitated to do anything, as long as I realize what I want to do or what I should do, I spend my whole time and energy for the thing that I want.<br>
+<br>
+Since my teenage until now, what I've always loved to do is <span class="special-text">to learn</span>. l have noticed that everytime I learn something new or more deeply in an area, there comes more things that I can learn. Of course, I didn't really enjoy studying while I was in high school. At that time, I studied because I needed to. However, even in those times, I enjoyed spending my time learning what I like, which are still some of my favorite things to learn.
+<br><br>They are language, drawing and winning strategies of games. Whenever I had free time after finishing the day's study plan, I tried to find ways to learn these things by searching internet, watching videos etc. I remember that I was spending whole day trying to figure out winning strategy of a game that my math teacher gave to me, without completing my study plan. <br>But, what remains in my memory until now is not the days that I had studied for so long hours, but the day when I was too obssessed with finding winning strategy of the game.
+<br><br>
+These days, (today is 13,April,2020) What I'm so obssessed with is Computer programming. I was trying to apply for some jobs. But,<br><span class="special-text"> I found it so hard to express myself only by a paper of CV</span>. That's how I first came up with the idea of making my own website, and now I'm learning HTML by watching youtube videos and reading some books.<br><br>
+ When I find something that I want to learn and start learning it, I feel so alive. I believe that<span class="special-text"> <br>I would never age if I never stop being enthusiastic for learning</span>. I would never stop learning, and stay young. This is the value that I would keep for my whole life.
+
+ </span></div>
+
   <ul class="vertical-menu">
     <li><a href="index.html">Home</a></li>
     <li><a href="1.html">About</a>
-      <ul class="vertical-dropdown">
+      <ul class="vertical-active">
         <li><a href="11.html">About me</a><li>
         <li><a href="12.html">Me now</a><li>
         </ul></li>
