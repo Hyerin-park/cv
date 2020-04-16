@@ -3,6 +3,7 @@
 <head>
   <title>HYERIN PARK_Who am I?</title>
   <meta charset="utf-8">
+
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
@@ -16,7 +17,6 @@
     font-family: 'Reenie Beanie', cursive;
     color: black;
     display: inline-block;
-    margin-left: 500px;
   }
   .top2 {
     font-size: 15px;
@@ -29,6 +29,7 @@
   body {
     background-color: white;
     font-family: 'Gotu', sans-serif;
+    text-align: center;
   }
   h1 {
     font-size: 160px;
@@ -102,7 +103,7 @@
     position: absolute;
     background-color: #DF9D03;
     min-width: 100px;
-    z-index:1;
+    z-index:2;
     list-style: none;
     padding:5px;
   }
@@ -129,15 +130,21 @@
     display:relative;
     padding: 5px;
     width: 150px;
+    position:fixed;
+    top:115px;
+    left:15px;
+    overflow: auto;
+    z-index: 1;
+    margin-bottom: 30px;
   }
   .vertical-menu a{
-    padding:25px;
+    padding:20px;
     background-color: #FBB552;
   }
   .vertical-menu li a{
     display: block;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
     color: white
   }
@@ -175,6 +182,34 @@
   .vertical-menu li:hover .vertical-dropdown {
     display: block
 }
+  .subtitle {
+    color: black;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 37px;
+    display: inline-block;
+    border: 7px dashed #DF9D03;
+    background-color: none;
+    padding-left:300px;
+    padding-right:300px;
+    z-index: 3;
+    margin-left: 200px;
+}
+  .content {
+    position: relative;
+    background-color: none;
+    border: 3px solid #DF9D03;
+    z-index: 2;
+    display: inline-block;
+    max-width: 800px;
+    min-width: 600px;
+    font-weight:400px;
+    text-align: center;
+    margin-left: 200px;
+  }
+  .about {
+    width:600px;
+    margin-left: 200px;
+  }
 
     </style>
 </head>
@@ -191,7 +226,7 @@
     <li><a href="2.html">News</a>
       <ul class="dropdown_content">
         <li><a href="21.html">Article</a><li>
-        <li><a href="22.html">Book</a><li>
+        <li><a href="22.html">Book</a>
         </ul></li>
     <li><a href="3.html">Activity</a>
       <ul class="dropdown_content">
@@ -201,6 +236,9 @@
         </ul></li>
     <li><a href="4.html">Contact</a></li>
   </ul>
+
+<h1 class="subtitle">NEWS</h1>
+
 
   <ul class="vertical-menu">
     <li><a href="index.html">Home</a></li>
